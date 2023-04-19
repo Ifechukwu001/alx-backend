@@ -40,7 +40,6 @@ class LFUCache(BaseCaching):
                 self.cache_keys[key] = self.cache_keys[key] + 1
             else:
                 self.cache_keys[key] = 0
-            
 
     def get(self, key):
         """Gets item associated with a key
